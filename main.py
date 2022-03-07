@@ -11,7 +11,7 @@ import random
 controller = None
 queue = Queue()
 active_ports = []
-IP = '81.177.135.61'
+IP = '00.000.000.00'
 PORT = 80
 ITERATIONS = 100
 THREADS = 100
@@ -156,5 +156,5 @@ if __name__ == '__main__':
     controller.signal(Signal.NEWNYM)
     _run_threading(THREADS, flood_udp_worker if IS_UDP else flood_tcp_worker)
 
-    # target = _create_target(True, 'www.sajt.ru')
+    # target = _create_target(True, 'www.........')
     # check_ports(target, range(1024))
